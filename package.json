@@ -1,0 +1,15 @@
+{
+  "name": "decorait-marketing",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "sass": "sass --watch styles.scss:styles.css",
+    "serve": "browser-sync start --server --files \"*.html, styles.css\" --no-open --no-notify",
+    "dev": "concurrently -k -n sass,serve -c blue,green \"npm:sass\" \"npm:serve\""
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "concurrently": "^8.2.2",
+    "sass": "^1.79.4"
+  }
+}

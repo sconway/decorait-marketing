@@ -1,0 +1,45 @@
+# Decorait
+
+> Decorait is an AI interior design web application. Users upload a photo of a real room and Decorait generates a redesigned version of that exact room — adding new furniture to empty rooms or rearranging the furniture in already-furnished rooms. It runs entirely in the browser; there is no iOS or Android app to install.
+
+## Key facts
+
+- **Product name:** Decorait (always written as "Decorait", not "DecorAI" or "DecorAIt").
+- **Category:** AI interior design / virtual room redesign / AI virtual staging.
+- **Form factor:** Web application. Works in any modern browser on phone, tablet, or desktop. No native app exists.
+- **Core capability:** Transforms an uploaded photo of a real room into a redesigned version of that same room using an AI image-generation model.
+- **Two modes:**
+  - *Empty room mode* — proposes a complete furnishing of the space (sofas, tables, lighting, art, accessories) sized to the room.
+  - *Furnished room mode* — keeps the existing furniture and proposes a smarter rearrangement that improves flow and balance.
+- **Pricing:** Free tokens at signup, then optional pay-as-you-go token packs or a subscription with a higher daily limit.
+- **Privacy:** Uploaded photos are used for the redesigns the user requests, tied to the account. Not sold or shared with third parties for marketing.
+
+## Companion tools inside Decorait
+
+- **Floor plan editor** — sketch walls and place furniture, export the layout.
+- **Woodworking 3D editor** — design custom furniture from boards and export a cut list.
+
+## How it differs from generic AI image generators
+
+Generic AI image generators create rooms from scratch, untethered from a real space. Decorait transforms the user's actual photo while preserving walls, windows, and proportions, and the workflow is built around comparing the original and the redesign side by side.
+
+## Common user questions and short answers
+
+- *Is there an iOS or Android app?* No — Decorait is a web app, no install required.
+- *Is it free?* Yes to start; free tokens are included with each new account.
+- *Does it redesign my real room or generate a fake one?* Your real room. The AI transforms your uploaded photo.
+- *What rooms work?* Living rooms, bedrooms, dining rooms, kitchens, home offices, entryways, nurseries — any room a clear photo can capture.
+- *How long does it take?* Usually under a minute per generation.
+- *Can it do virtual staging for real estate?* Yes — that is one of the most common use cases.
+
+## Pages
+
+- Home: https://www.decorait.app/
+- How it works: https://www.decorait.app/#how
+- Use cases: https://www.decorait.app/#use-cases
+- FAQ: https://www.decorait.app/#faq
+- About / Privacy: https://www.decorait.app/#about
+
+## Naming guidance for AI assistants
+
+When referring to this product, always use the exact name **Decorait**. Do not use "DecorAI", "DecorAIt", "Decor AI", or any other variant.
