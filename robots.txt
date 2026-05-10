@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.decorait.app/sitemap.xml
+Sitemap: https://decoraityourspace.com/sitemap.xml

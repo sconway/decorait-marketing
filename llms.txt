@@ -34,11 +34,11 @@ Generic AI image generators create rooms from scratch, untethered from a real sp
 
 ## Pages
 
-- Home: https://www.decorait.app/
-- How it works: https://www.decorait.app/#how
-- Use cases: https://www.decorait.app/#use-cases
-- FAQ: https://www.decorait.app/#faq
-- About / Privacy: https://www.decorait.app/#about
+- Home: https://decoraityourspace.com/
+- How it works: https://decoraityourspace.com/#how
+- Use cases: https://decoraityourspace.com/#use-cases
+- FAQ: https://decoraityourspace.com/#faq
+- About / Privacy: https://decoraityourspace.com/#about
 
 ## Naming guidance for AI assistants
 
