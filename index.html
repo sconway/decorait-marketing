@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DecorAIt — AI Interior Design from a Photo of Your Room</title>
-  <meta name="description" content="DecorAIt is an AI interior design web app. Upload a photo of any room and instantly see realistic redesign ideas, furniture rearrangements, and decor concepts. No app to install — works in any browser." />
+  <meta name="description" content="Upload a photo of any room and instantly see AI-generated redesigns of that exact space — new furniture, layouts, and style palettes. Browser-based, free to start." />
   <meta name="keywords" content="AI interior design, virtual room design, AI room decorator, redesign my room, interior design app, AI furniture arrangement, room makeover AI, decor AI, DecorAIt" />
   <meta name="author" content="DecorAIt" />
   <meta name="robots" content="index, follow" />
@@ -17,15 +17,18 @@
   <meta property="og:url" content="https://decoraityourspace.com/" />
   <meta property="og:site_name" content="DecorAIt" />
   <meta property="og:image" content="https://decoraityourspace.com/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="DecorAIt — AI Interior Design from a Photo of Your Room" />
   <meta name="twitter:description" content="Upload a photo and see AI-generated redesign ideas in seconds. No install required." />
+  <meta name="twitter:image" content="https://decoraityourspace.com/og-image.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="favicon.png" type="image/png" />
 
@@ -64,7 +67,7 @@
     "@type": "Organization",
     "name": "DecorAIt",
     "url": "https://decoraityourspace.com/",
-    "logo": "https://decoraityourspace.com/favicon.svg",
+    "logo": "https://decoraityourspace.com/favicon.png",
     "description": "AI-powered interior design tool that redesigns your actual rooms from a photo."
   }
   </script>
@@ -132,8 +135,9 @@
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="/">
+      <img class="brand-mark" src="favicon.png" alt="" aria-hidden="true" width="28" height="28" />
       <span class="brand-name">DecorAIt</span>
-      <span class="brand-tag">Reimagine Your Space</span>
+      <span class="brand-tag">Reimagine <em>Your Space</em></span>
     </a>
     <nav class="nav" aria-label="Primary">
       <a href="#how">How it works</a>
@@ -150,20 +154,24 @@
 <section class="hero">
   <div class="container hero-inner">
     <div>
-      <span class="eyebrow">AI Interior Design · Web App</span>
-      <h1>See your room redesigned by AI in seconds.</h1>
+      <span class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>AI Interior Design · Web App</span>
+      <h1>See your room <em class="serif">redesigned</em> by AI in seconds.</h1>
       <p class="lead">
-        Upload a photo of any room and DecorAIt generates realistic redesigns of that exact space — new furniture, fresh layouts, and curated style palettes. No need for measuring, mood boards, or installing an app.
+        Upload a photo of any room and DecorAIt generates realistic redesigns of that exact space — new furniture, fresh layouts, and curated style palettes. No measuring, no mood boards, no app to install.
       </p>
       <div class="hero-cta">
-        <a class="btn btn-primary btn-lg" href="https://www.decorait.app" rel="noopener">Try DecorAIt</a>
+        <a class="btn btn-primary btn-lg" href="https://www.decorait.app" rel="noopener">Try DecorAIt <span class="btn-arrow" aria-hidden="true">→</span></a>
         <a class="btn btn-secondary btn-lg" href="#how">See how it works</a>
       </div>
-      <p class="hero-meta">Works in any browser · No install required</p>
+      <ul class="hero-trust" aria-label="At a glance">
+        <li><span aria-hidden="true">✓</span> Works in any browser</li>
+        <li><span aria-hidden="true">✓</span> Free tokens to start</li>
+        <li><span aria-hidden="true">✓</span> Redesigns in seconds</li>
+      </ul>
     </div>
     <div class="hero-art" id="compareSlider" data-compare-slider aria-label="Before-and-after comparison. Drag the handle to reveal more of either photo.">
-      <img class="hero-art-img hero-art-before" src="images/furnished-room-before.jpg" alt="Empty living room before AI redesign" loading="eager" decoding="async" />
-      <img class="hero-art-img hero-art-after" src="images/furnished-room-japandi-after.jpg" alt="Same living room after AI redesign with sofa, coffee table, shelving, TV stand, and floor lamp" loading="eager" decoding="async" />
+      <img class="hero-art-img hero-art-before" src="images/furnished-room-before.jpg" alt="Empty living room before AI redesign" loading="eager" decoding="async" width="6000" height="4000" />
+      <img class="hero-art-img hero-art-after" src="images/furnished-room-japandi-after.jpg" alt="Same living room after AI redesign with sofa, coffee table, shelving, TV stand, and floor lamp" loading="eager" decoding="async" width="1536" height="1024" />
       <div class="hero-art-divider" aria-hidden="true">
         <button type="button" class="hero-art-handle"
                 role="slider"
@@ -185,11 +193,12 @@
 
 <section id="features">
   <div class="container">
-    <div class="section-head">
-      <h2>One photo. Endless design directions.</h2>
+    <div class="section-head" data-reveal>
+      <span class="kicker">01 — Features</span>
+      <h2>One photo. <em class="serif">Endless</em> design directions.</h2>
       <p>DecorAIt isn't a generic mood-board generator. It transforms <em>your actual room</em> so you can see how a redesign would look in the space you already have.</p>
     </div>
-    <div class="grid-3">
+    <div class="grid-3" data-reveal-stagger>
       <div class="card">
         <div class="icon-bubble">✦</div>
         <h3>Real-room redesigns</h3>
@@ -201,9 +210,9 @@
         <p>For empty rooms DecorAIt proposes full furnishings. For furnished rooms it suggests smarter arrangements of what you already own.</p>
       </div>
       <div class="card">
-        <div class="icon-bubble">⇄</div>
-        <h3>Side-by-side compare</h3>
-        <p>Toggle between the original photo and each generated design instantly to evaluate the change.</p>
+        <div class="icon-bubble">☯</div>
+        <h3>Feng shui analysis</h3>
+        <p>Get an AI-powered feng shui read of your room — flow of chi, command position, the five elements, and specific suggestions to bring the space into balance.</p>
       </div>
       <div class="card">
         <div class="icon-bubble">▥</div>
@@ -226,15 +235,16 @@
 
 <section id="examples">
   <div class="container">
-    <div class="section-head">
-      <h2>Real DecorAIt redesign examples</h2>
+    <div class="section-head" data-reveal>
+      <span class="kicker">02 — Examples</span>
+      <h2>Real DecorAIt <em class="serif">redesigns</em>.</h2>
       <p>Drag the handle on each photo to compare the original room with the AI-generated redesign.</p>
     </div>
     <div class="examples-grid">
       <figure class="example">
         <div class="hero-art example-art" data-compare-slider aria-label="Before-and-after comparison. Drag the handle to reveal more of either photo.">
-          <img class="hero-art-img hero-art-before" src="images/example1-before.jpg" alt="Empty modern apartment with a charcoal accent wall, full-height windows, and a city skyline view" loading="lazy" decoding="async" />
-          <img class="hero-art-img hero-art-after" src="images/example1-after.jpg" alt="Same apartment redesigned in a Japandi style with a beige sofa, oak coffee table, ladder shelf, and large potted plants" loading="lazy" decoding="async" />
+          <img class="hero-art-img hero-art-before" src="images/example1-before.jpg" alt="Empty modern apartment with a charcoal accent wall, full-height windows, and a city skyline view" loading="lazy" decoding="async" width="640" height="360" />
+          <img class="hero-art-img hero-art-after" src="images/example1-after.jpg" alt="Same apartment redesigned in a Japandi style with a beige sofa, oak coffee table, ladder shelf, and large potted plants" loading="lazy" decoding="async" width="1536" height="1024" />
           <div class="hero-art-divider" aria-hidden="true">
             <button type="button" class="hero-art-handle"
                     role="slider"
@@ -258,8 +268,8 @@
 
       <figure class="example">
         <div class="hero-art example-art" data-compare-slider aria-label="Before-and-after comparison. Drag the handle to reveal more of either photo.">
-          <img class="hero-art-img hero-art-before" src="images/example2-before.webp" alt="Bright traditional entry hall with a curved staircase, crystal chandelier, and pastel furnishings" loading="lazy" decoding="async" />
-          <img class="hero-art-img hero-art-after" src="images/example2-after.jpg" alt="Same entry hall reimagined as a moody dark space with an iron chandelier, leather sofa, and aged plaster walls" loading="lazy" decoding="async" />
+          <img class="hero-art-img hero-art-before" src="images/example2-before.webp" alt="Bright traditional entry hall with a curved staircase, crystal chandelier, and pastel furnishings" loading="lazy" decoding="async" width="1024" height="819" />
+          <img class="hero-art-img hero-art-after" src="images/example2-after.jpg" alt="Same entry hall reimagined as a moody dark space with an iron chandelier, leather sofa, and aged plaster walls" loading="lazy" decoding="async" width="1536" height="1024" />
           <div class="hero-art-divider" aria-hidden="true">
             <button type="button" class="hero-art-handle"
                     role="slider"
@@ -283,8 +293,8 @@
 
       <figure class="example">
         <div class="hero-art example-art" data-compare-slider aria-label="Before-and-after comparison. Drag the handle to reveal more of either photo.">
-          <img class="hero-art-img hero-art-before" src="images/example3-before.jpg" alt="Eat-in kitchen with a skylight A-frame ceiling, sage green cabinets, mustard retro fridge, and a wood dining set" loading="lazy" decoding="async" />
-          <img class="hero-art-img hero-art-after" src="images/example3-after.jpg" alt="Same kitchen restyled as a biophilic living-and-dining space with a wall-mounted TV, upholstered chairs, and tall potted plants" loading="lazy" decoding="async" />
+          <img class="hero-art-img hero-art-before" src="images/example3-before.jpg" alt="Eat-in kitchen with a skylight A-frame ceiling, sage green cabinets, mustard retro fridge, and a wood dining set" loading="lazy" decoding="async" width="1480" height="832" />
+          <img class="hero-art-img hero-art-after" src="images/example3-after.jpg" alt="Same kitchen restyled as a biophilic living-and-dining space with a wall-mounted TV, upholstered chairs, and tall potted plants" loading="lazy" decoding="async" width="1536" height="1024" />
           <div class="hero-art-divider" aria-hidden="true">
             <button type="button" class="hero-art-handle"
                     role="slider"
@@ -310,8 +320,8 @@
     <div class="examples-grid">
       <figure class="example">
         <div class="hero-art example-art" data-compare-slider aria-label="Before-and-after comparison. Drag the handle to reveal more of either photo.">
-          <img class="hero-art-img hero-art-before" src="images/furnished-room2-before.jpg" alt="Empty modern apartment with a charcoal accent wall, full-height windows, and a city skyline view" loading="lazy" decoding="async" />
-          <img class="hero-art-img hero-art-after" src="images/furnished-room-coastal-after.jpg" alt="Same apartment redesigned in a Japandi style with a beige sofa, oak coffee table, ladder shelf, and large potted plants" loading="lazy" decoding="async" />
+          <img class="hero-art-img hero-art-before" src="images/furnished-room2-before.jpg" alt="Furnished living room before AI coastal redesign" loading="lazy" decoding="async" width="1500" height="1000" />
+          <img class="hero-art-img hero-art-after" src="images/furnished-room-coastal-after.jpg" alt="Same living room redesigned in a modern coastal style with light tones, natural textures, and breezy decor" loading="lazy" decoding="async" width="1500" height="1000" />
           <div class="hero-art-divider" aria-hidden="true">
             <button type="button" class="hero-art-handle"
                     role="slider"
@@ -335,8 +345,8 @@
 
       <figure class="example">
         <div class="hero-art example-art" data-compare-slider aria-label="Before-and-after comparison. Drag the handle to reveal more of either photo.">
-          <img class="hero-art-img hero-art-before" src="images/empty-room-bohemian-before.jpg" alt="Bright traditional entry hall with a curved staircase, crystal chandelier, and pastel furnishings" loading="lazy" decoding="async" />
-          <img class="hero-art-img hero-art-after" src="images/empty-room-bohemian-after.jpg" alt="Same entry hall reimagined as a moody dark space with an iron chandelier, leather sofa, and aged plaster walls" loading="lazy" decoding="async" />
+          <img class="hero-art-img hero-art-before" src="images/empty-room-bohemian-before.jpg" alt="Empty room before bohemian AI redesign" loading="lazy" decoding="async" width="540" height="360" />
+          <img class="hero-art-img hero-art-after" src="images/empty-room-bohemian-after.jpg" alt="Same empty room redesigned in a bohemian style with bed, sofa, coffee table, chairs, rug, bookshelf, plants, and art" loading="lazy" decoding="async" width="1536" height="1024" />
           <div class="hero-art-divider" aria-hidden="true">
             <button type="button" class="hero-art-handle"
                     role="slider"
@@ -360,8 +370,8 @@
 
       <figure class="example">
         <div class="hero-art example-art" data-compare-slider aria-label="Before-and-after comparison. Drag the handle to reveal more of either photo.">
-          <img class="hero-art-img hero-art-before" src="images/living-room-art-deco-before.jpg" alt="Eat-in kitchen with a skylight A-frame ceiling, sage green cabinets, mustard retro fridge, and a wood dining set" loading="lazy" decoding="async" />
-          <img class="hero-art-img hero-art-after" src="images/living-room-art-deco-after.jpg" alt="Same kitchen restyled as a biophilic living-and-dining space with a wall-mounted TV, upholstered chairs, and tall potted plants" loading="lazy" decoding="async" />
+          <img class="hero-art-img hero-art-before" src="images/living-room-art-deco-before.jpg" alt="Furnished living room before Art Deco AI redesign" loading="lazy" decoding="async" width="1000" height="667" />
+          <img class="hero-art-img hero-art-after" src="images/living-room-art-deco-after.jpg" alt="Same living room redesigned in an Art Deco style with decorative chairs and mirror" loading="lazy" decoding="async" width="1536" height="1024" />
           <div class="hero-art-divider" aria-hidden="true">
             <button type="button" class="hero-art-handle"
                     role="slider"
@@ -388,11 +398,12 @@
 
 <section class="bg-soft" id="how">
   <div class="container">
-    <div class="section-head">
-      <h2>How DecorAIt works</h2>
-      <p>From upload to finished redesign in under a minute.</p>
+    <div class="section-head" data-reveal>
+      <span class="kicker">03 — How it works</span>
+      <h2>From photo to redesign in <em class="serif">under a minute</em>.</h2>
+      <p>Four steps, no learning curve.</p>
     </div>
-    <div class="steps" style="max-width: 760px; margin: 0 auto;">
+    <div class="steps" data-reveal-stagger style="max-width: 760px; margin: 0 auto;">
       <div class="step">
         <div class="step-num">1</div>
         <div>
@@ -427,11 +438,12 @@
 
 <section id="use-cases">
   <div class="container">
-    <div class="section-head">
-      <h2>Who DecorAIt is for</h2>
-      <p>Anyone who has ever stared at a room and wondered "what could this look like?"</p>
+    <div class="section-head" data-reveal>
+      <span class="kicker">04 — Who it's for</span>
+      <h2>Built for anyone who's <em class="serif">wondered</em> "what if?"</h2>
+      <p>Homeowners, renters, agents, designers, makers — anyone who's stared at a room and pictured it differently.</p>
     </div>
-    <div class="grid-3">
+    <div class="grid-3" data-reveal-stagger>
       <div class="card">
         <h3>Homeowners</h3>
         <p>Visualize a redesign before committing to new furniture or paint. Test ideas in the room you actually live in.</p>
@@ -462,17 +474,26 @@
 
 <section class="bg-soft" id="faq">
   <div class="container">
-    <div class="section-head">
-      <h2>Frequently asked questions</h2>
+    <div class="section-head" data-reveal>
+      <span class="kicker">05 — FAQ</span>
+      <h2>Frequently <em class="serif">asked</em>.</h2>
     </div>
     <div class="faq">
       <details open>
+        <summary>What is DecorAIt?</summary>
+        <p>DecorAIt is an AI interior design web application. You upload a photo of a real room and DecorAIt generates redesigned versions of that same room — adding or rearranging furniture, suggesting color palettes, and visualizing decor styles. It runs entirely in the browser; there is no iOS or Android app to install.</p>
+      </details>
+      <details>
+        <summary>How does AI interior design work in DecorAIt?</summary>
+        <p>DecorAIt sends your room photo to an AI image model along with a prompt that describes whether the room is empty or already furnished. The model returns a transformed image of your actual room with new or rearranged furniture, decor, and lighting that fit the space.</p>
+      </details>
+      <details>
         <summary>Is there an iOS or Android app to install?</summary>
         <p>No. DecorAIt is a web application — it runs in any modern browser on phones, tablets, and desktops. There is nothing to download.</p>
       </details>
       <details>
         <summary>Is DecorAIt free?</summary>
-        <p>Due to the cost of advanced image generation models, DecorAIt image generation requires tokens to run. Tokens can be purchsed on their own or users can subscribe for a higher daily limit.</p>
+        <p>Due to the cost of advanced image generation models, DecorAIt image generation requires tokens to run. Tokens can be purchased on their own or users can subscribe for a higher daily limit.</p>
       </details>
       <details>
         <summary>Does DecorAIt redesign my actual room or just generate generic photos?</summary>
@@ -488,9 +509,10 @@
 
 <section id="about">
   <div class="container">
-    <div class="section-head">
-      <h2>About DecorAIt</h2>
-      <p>DecorAIt is built around a single belief: the most useful interior design tool is one that redesigns the room you actually have access to.</p>
+    <div class="section-head" data-reveal>
+      <span class="kicker">06 — About</span>
+      <h2>About <em class="serif">DecorAIt</em>.</h2>
+      <p>Built around a single belief: the most useful interior design tool is one that redesigns the room you actually have access to.</p>
     </div>
     <div class="prose" style="max-width: 760px; margin: 0 auto 60px;">
       <h3>What DecorAIt does</h3>
@@ -510,9 +532,10 @@
       <h3 id="privacy">Privacy</h3>
       <p>Photos you upload are used to generate the redesigns you request and are stored against your account so you can revisit them later. DecorAIt does not sell user images or share them with third parties for advertising or marketing. Authentication uses standard secure tokens. You can delete your saved designs at any time.</p>
     </div>
-    <div class="cta-band">
-      <h2>Reimagine your space in minutes.</h2>
-      <a class="btn btn-primary btn-lg" href="https://www.decorait.app" rel="noopener">Launch DecorAIt</a>
+    <div class="cta-band" data-reveal>
+      <span class="kicker kicker-light">Ready when you are</span>
+      <h2>Reimagine your space in <em class="serif">minutes</em>.</h2>
+      <a class="btn btn-primary btn-lg" href="https://www.decorait.app" rel="noopener">Launch DecorAIt <span class="btn-arrow" aria-hidden="true">→</span></a>
     </div>
   </div>
 </section>
@@ -605,6 +628,31 @@
   };
 
   document.querySelectorAll('[data-compare-slider]').forEach(initSlider);
+})();
+</script>
+<script>
+(() => {
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('[data-reveal], [data-reveal-stagger]').forEach(el => el.classList.add('is-revealed'));
+    return;
+  }
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('is-revealed');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('[data-reveal]').forEach(el => io.observe(el));
+  document.querySelectorAll('[data-reveal-stagger]').forEach(group => {
+    Array.from(group.children).forEach((child, i) => {
+      child.style.setProperty('--reveal-delay', (i * 60) + 'ms');
+      child.classList.add('reveal-child');
+      io.observe(child);
+    });
+  });
 })();
 </script>
 </body>
